@@ -77,20 +77,31 @@
     </style>
   </head>
 
-  <body>
-    <div class="mt-4">
-      <ul class="nav nav-tabs">
-        <li class="nav-item m-4" style="width: 207px">
+  <body dir="rtl">
+    <div class="mt-4 ">
+      <ul class="nav nav-tabs d-flex justify-content-end ">
+        <li class="nav-item m-4 text"  style="width: 207px">
           <a class="nav-link" href="#"
-            ><img src="sae-logo.webp" alt="" width="100%"
+          ><img src="sae-logo.webp" alt="" width="100%"
           /></a>
-        </li>
-        <li class="nav-item mx-5" >
-          <a href=""></a>
         </li>
       </ul>
     </div>
-
+    
+    <section>
+      <div class=" mt-5 d-flex justify-content-center flex-column ">
+        <h1 class="text-center text-white mt-3">
+          هل تمتلك الشغف <span style="color: #ee2737;">لتطوير الألعاب</span>،<span style="color: #ffb500;">صناعة الأفلام</span>، أو خوض مجالات الإبداع الأخرى؟
+        </h1>
+        <div class="text-center">
+          <h2 class="text-center text-white mt-3 w-75 mx-auto ">
+          سجل اهتمامك في برامج الدبلوم أو الدورات القصيرة المتخصصة في أكبر كلية الإعلام الإبداعي في العالم، التي تمتد بخبرتها عبر<span style="color: #f15d24;"> 43  فرعًا في 27 دولة</span>  و قريباً في <span style="color:#049e49 ;">المملكة العربية السعودية</span> ، 
+سجّل اهتمامك الآن، وابدأ رحلتك نحو مستقبل مهني مليء بالابتكار والفرص.
+        </h2>
+        </div>
+        
+      </div>
+    </section>
     <section>
       <!-- Carousel -->
       <div
@@ -147,99 +158,111 @@
         </div>
       </div>
     </section>
-    <section>
-      <div class="container mt-5">
-        <h1 class="text-center text-white mt-3">
-          <span style="color: #f15d24">47</span> composes In
-          <span style="color: #f15d24">23</span> Countries
-        </h1>
-        <h2 class="text-center text-white mt-3">
-          <span style="color: #f15d24">SOON</span> in KSA
-        </h2>
-      </div>
-    </section>
     <section class="mt-5 form-container">
+      <div class="form-header">
+        <h2 style="color: #f15d24;">سجل ألتخصص المهتم به</h2>
+      </div>
       <form method="POST">
         <!-- Full Name -->
         <div class="mb-4">
-          <label for="name" class="form-label">Full Name</label>
+          <label for="name" class="form-label">ألاسم الكامل:</label>
           <input
             type="text"
             name="name"
             class="form-control p-3"
             style="background-color: #111827"
             id="name"
-            placeholder="Enter your full name"
+            placeholder="أدخل الاسم الكامل"
             required
           />
         </div>
         <!-- Email -->
         <div class="mb-4">
-          <label for="email" class="form-label">Email Address</label>
+          <label for="email" class="form-label">ألبريد ألالكتروني:</label>
           <input
             type="email"
             name="email"
             class="form-control p-3"
             style="background-color: #111827"
             id="email"
-            placeholder="Enter your email address"
+            placeholder="أدخل البريد ألالكتروني"
           />
         </div>
         <!-- Phone -->
         <div class="mb-4">
-          <label for="phone" class="form-label">Phone Number</label>
+          <label for="phone" class="form-label">رقم ألهاتف:</label>
           <input
             type="text"
             name="phone_number"
             class="form-control p-3"
             style="background-color: #111827"
             id="phone"
-            placeholder="Enter your phone number"
+            placeholder="ادخل رقم الهاتف"
             required
           />
         </div>
         <!-- City -->
         <div class="mb-4">
-          <label for="city" class="form-label">City</label>
+          <label for="city" class="form-label">ألمدينة:</label>
           <select
             id="city"
             name="city"
             class="form-select p-3"
             style="background-color: #111827"
           >
-            <option selected disabled>Select your city</option>
-            <option value="Jeddah">Jeddah</option>
-            <option value="Riyadh">Riyadh</option>
+            <option selected disabled>أختر ألمدينة</option>
+            <option value="Jeddah">جدة</option>
+            <option value="Riyadh">الرياض</option>
           </select>
         </div>
         <!-- category -->
         <div class="mb-4">
-          <label for="course" class="form-label">Select Plan</label>
+          <label for="course" class="form-label">أختر ألخطة:</label>
           <select
             id="course"
             name="course"
             class="form-select p-3"
             style="background-color: #111827"
           >
-            <option selected disabled>Choose a Plan</option>
+            <option selected disabled>أختر الخطة ألمهتم بها</option>
             <option value="">Short courses</option>
             <option value="">Diploma</option>
           </select>
         </div>
         <!-- Course -->
         <div class="mb-5">
-          <label for="course" class="form-label">Select Course</label>
-          <select
-            id="course"
-            name="course"
-            class="form-select p-3"
-            style="background-color: #111827"
-          >
-            <option selected disabled>Choose a course</option>
-            <option value="">test test</option>
-            <option value="">test test</option>
-            <option value="">test test</option>
-          </select>
+          <label for="course" class="form-label">ألتخصص المهتم به:</label>
+          <div class="dropdown">
+            <button
+              class="btn btn-dark dropdown-toggle p-3 w-100 text-end"
+              type="button"
+              id="dropdownMenuButton"
+              data-bs-toggle="dropdown"
+              aria-expanded="false"
+              style="background-color: #111827"
+            >
+              أختر ألتخصص
+            </button>
+            <ul
+              class="dropdown-menu w-100 p-2 bg-dark text-white"
+              aria-labelledby="dropdownMenuButton"
+            >
+              <li>
+                <div class="text-end">
+                  <input
+                    class="form-check-input"
+                    type="checkbox"
+                    value="1"
+                    id="course1"
+                    name="course"
+                  />
+                  <label class="form-check-label" for="course1"
+                    >test test 1</label
+                  >
+                </div>
+              </li>
+            </ul>
+          </div>
         </div>
         <!-- Submit -->
         <button
@@ -247,9 +270,15 @@
           class="btn btn-custom"
           style="background-color: #111827; border: solid #a0a0a0 0.1px"
         >
-          Register Now
+          إرسال
         </button>
       </form>
     </section>
+
+    <footer class="my-5 pt-5" style="border-top: solid #ffffff 0.1px ;">
+      <p class="text-center text-white">
+        جميع الحقوق محفوظة © 2025
+      </p>
+    </footer>
   </body>
 </html>
